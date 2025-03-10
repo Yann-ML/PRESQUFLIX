@@ -1,12 +1,11 @@
 import requests
 import streamlit as st
-from streamlit_authenticator import Authenticate
+
 import pandas as pd
 import plotly_express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
-# Import du module d'écriture
-from st_keyup import st_keyup
+
 # Importation du module
 from streamlit_option_menu import option_menu
 from sklearn.feature_extraction.text import CountVectorizer
