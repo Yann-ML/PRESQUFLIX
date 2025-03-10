@@ -11,7 +11,7 @@ from streamlit_option_menu import option_menu
 from sklearn.feature_extraction.text import CountVectorizer
 import random
 
-from fonction import *
+from fonction import fn_top_1, fn_top_films
 
 st.set_page_config(page_title='Scénaristes',
                    layout="wide")
