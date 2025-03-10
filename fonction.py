@@ -1,24 +1,24 @@
-import requests
-import streamlit as st
+# import requests
+# import streamlit as st
 
-import pandas as pd
-import plotly.express as px
-import seaborn as sns
-import matplotlib.pyplot as plt
+# import pandas as pd
+# import plotly.express as px
+# import seaborn as sns
+# import matplotlib.pyplot as plt
 
-# Importation du module
-from streamlit_option_menu import option_menu
+# # Importation du module
+# from streamlit_option_menu import option_menu
 
-# Données fixes pour le DataFrame
-film_dataframe = pd.read_csv('https://raw.githubusercontent.com/Yann-ML/PRESQUFLIX/main/movie_stats.zip')
-# ajout de la decennie au DF (oublié dans le DF de base...)
-film_dataframe['decade'] = (film_dataframe['startYear'] // 10) * 10
+# # Données fixes pour le DataFrame
+# film_dataframe = pd.read_csv('https://raw.githubusercontent.com/Yann-ML/PRESQUFLIX/main/movie_stats.zip')
+# # ajout de la decennie au DF (oublié dans le DF de base...)
+# film_dataframe['decade'] = (film_dataframe['startYear'] // 10) * 10
 
 
-headers = {
-    "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNzliMjE5OTY2YjFiYTczNDliMTFiNjQxNWQ2ZGFjZiIsIm5iZiI6MTczNDU5NjIxNi45NTM5OTk4LCJzdWIiOiI2NzYzZDY3ODU4MWEzYzA1MDdhYjBjODIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.ep8YcNVjt4GmmtNlO6wYBoBJxfTNwVjs5Ug0B0PuMKI"
-}
+# headers = {
+#     "accept": "application/json",
+#     "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNzliMjE5OTY2YjFiYTczNDliMTFiNjQxNWQ2ZGFjZiIsIm5iZiI6MTczNDU5NjIxNi45NTM5OTk4LCJzdWIiOiI2NzYzZDY3ODU4MWEzYzA1MDdhYjBjODIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.ep8YcNVjt4GmmtNlO6wYBoBJxfTNwVjs5Ug0B0PuMKI"
+# }
 
 # définition de la fonction d'affichage du top 2 à 4 pour éviter de retaper le code
 def fn_top_1(df, max_films =1):
