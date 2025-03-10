@@ -6,3 +6,4 @@ seaborn
 matplotlib
 streamlit-option-menu
 scikit-learn
+beautifulsoup4
