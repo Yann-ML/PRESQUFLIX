@@ -165,7 +165,7 @@ with st.expander("Genres"):
     
     # --------------------------------------------------------------
     
-    st.write("Sélectionnez le graphique souhaité:") 
+    st.write("Sélectionner le graphique souhaité:") 
     
     list_genre = sorted(df_genres['Genres'])
     

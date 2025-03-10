@@ -41,7 +41,7 @@ with col1:
       st.write('')
         
 with col2:
-    st.image('LOGO.webp', width=500)
+    st.image('LOGO.webp', width=250)
     
 with col3:
     st.write('')
