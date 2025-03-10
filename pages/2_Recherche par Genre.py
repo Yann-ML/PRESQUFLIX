@@ -11,6 +11,8 @@ from streamlit_option_menu import option_menu
 from sklearn.feature_extraction.text import CountVectorizer
 import random
 
+from fonction import *
+
 st.set_page_config(page_title='Genres',
                    layout="wide")
 
@@ -54,7 +56,7 @@ with col1:
 
 with col2:
     decennie_choisie = st.selectbox(
-        "Choisissez une décennie :",
+        "Choix de la décennie :",
         options=sorted(film_dataframe['decade'][film_dataframe['decade'] != 0].dropna().unique()),
         index=12
     )
