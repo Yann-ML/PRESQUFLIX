@@ -20,7 +20,7 @@ headers = {
 }
 
 # Données fixes pour le DataFrame
-film_dataframe = pd.read_csv('movie_stats.zip')
+film_dataframe = pd.read_csv('https://raw.githubusercontent.com/Yann-ML/PRESQUFLIX/main/movie_stats.zip')
 # ajout de la decennie au DF (oublié dans le DF de base...)
 film_dataframe['decade'] = (film_dataframe['startYear'] // 10) * 10
 

@@ -20,7 +20,7 @@ headers = {
 }
 
 # Données fixes pour le DataFrame
-film_dataframe = pd.read_csv('movie_stats.zip')
+film_dataframe = pd.read_csv('https://raw.githubusercontent.com/Yann-ML/PRESQUFLIX/main/movie_stats.zip')
 # ajout de la decennie au DF (oublié dans le DF de base...)
 film_dataframe['decade'] = (film_dataframe['startYear'] // 10) * 10
 st.header('Tableaux de bords')
@@ -134,7 +134,7 @@ with st.expander("Genres"):
     df_films = film_dataframe[film_dataframe['titleType'] == "movie"]
     df_films.dropna(subset= ['revenue', 'popularity', 'id', 'budget'],inplace= True) 
 
-    df_genres = pd.read_csv("df_genres.zip")
+    df_genres = pd.read_csv("https://raw.githubusercontent.com/Yann-ML/PRESQUFLIX/main/df_genres.zip")
     def fn_count_genre(var):
         var = str(var)
         var.count(",")
